@@ -112,7 +112,7 @@ function keyDown(e) {
         }
     }
     if(para.isEnd==1){
-        layer.msg("游戏结束！是否重新开始游戏？",{
+        layer.msg("游戏结束！<br>是否重新开始游戏？",{
             time:0,
             btn:['是','否'],
             offset:'300px',
