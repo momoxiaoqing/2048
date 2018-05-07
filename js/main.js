@@ -52,13 +52,21 @@ function createNum() {
 }
 
 function changColor( x,y,number) {
-    switch (number){
+    if(number===0){
+        $('#x'+x+'y'+y+'>.add').remove();
+    }else{
+        $('#x'+x+'y'+y).html("<div class='add style"+number+"'>"+number+"</div>");
+        if(number===2048){
+            para.isEnd=2;
+        }
+    }
+  /*  switch (number){
         case 0:
             $('#x'+x+'y'+y+'>.add').remove();
-           /* document.getElementById('x'+x).childNodes.item(y).style.backgroundColor="#ccc0b3";*/
+           /!* document.getElementById('x'+x).childNodes.item(y).style.backgroundColor="#ccc0b3";*!/
             break;
         case 2:
-            /*document.getElementById('x'+x).childNodes.item(y).style.backgroundColor="#eee4da";*/
+            /!*document.getElementById('x'+x).childNodes.item(y).style.backgroundColor="#eee4da";*!/
             $('#x'+x+'y'+y).html("<div class='add style2'>2</div>");
             break;
         case 4:
@@ -93,7 +101,7 @@ function changColor( x,y,number) {
             para.isEnd=2;
             break;
         default: break;
-    }
+    }*/
 }
 
 

@@ -30,6 +30,7 @@
     background: #ccc0b3;
     margin-right: 15px;
     float: left;
+    transition-duration: 500ms;
 }
 #start{
     margin-top: 20px;
